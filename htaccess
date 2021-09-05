@@ -1,0 +1,54 @@
+ErrorDocument 403 /404.html
+ErrorDocument 404 /404.html
+
+DirectoryIndex page17616114.html
+
+RewriteEngine On
+
+RewriteCond %{HTTP:X-Forwarded-Proto} =http
+RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+
+RewriteCond %{REQUEST_FILENAME} /robots.txt
+RewriteCond "%{DOCUMENT_ROOT}/robots_%{HTTP_HOST}.txt" -f
+RewriteRule ^(.*)$ robots_%{HTTP_HOST}.txt [NC,L]
+RewriteRule ^superkayaking$ page17616114.html [NC]
+RewriteRule ^superkayaking/$ page17616114.html [NC]
+
+RewriteRule ^eveningtours$ page20688044.html [NC]
+RewriteRule ^eveningtours/$ page20688044.html [NC]
+
+RewriteRule ^reviews$ page20689673.html [NC]
+RewriteRule ^reviews/$ page20689673.html [NC]
+
+RewriteRule ^about$ page20689884.html [NC]
+RewriteRule ^about/$ page20689884.html [NC]
+
+RewriteRule ^morningtours$ page20710097.html [NC]
+RewriteRule ^morningtours/$ page20710097.html [NC]
+
+RewriteRule ^supyoga$ page20711163.html [NC]
+RewriteRule ^supyoga/$ page20711163.html [NC]
+
+RewriteRule ^gallery$ page20711516.html [NC]
+RewriteRule ^gallery/$ page20711516.html [NC]
+
+RewriteRule ^booking$ page20713116.html [NC]
+RewriteRule ^booking/$ page20713116.html [NC]
+
+RewriteRule ^menu$ page20722460.html [NC]
+RewriteRule ^menu/$ page20722460.html [NC]
+
+RewriteRule ^instructor$ page20744019.html [NC]
+RewriteRule ^instructor/$ page20744019.html [NC]
+
+RewriteRule ^custom$ page20865965.html [NC]
+RewriteRule ^custom/$ page20865965.html [NC]
+
+RewriteRule ^night$ page20866017.html [NC]
+RewriteRule ^night/$ page20866017.html [NC]
+
+RewriteRule ^schedule$ page20898824.html [NC]
+RewriteRule ^schedule/$ page20898824.html [NC]
+
+RewriteRule ^favicon.ico$ https://static.tildacdn.com/tild6364-6237-4832-a638-346361613066/favicon-2.ico [R=302,L]
+
